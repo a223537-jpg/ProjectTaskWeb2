@@ -10,7 +10,7 @@ class ProductModel {
 
     // READ all records
     public function readAll() {
-        $sql = "SELECT * FROM tbl_products_a123456 ORDER BY fld_product_num ASC";
+        $sql = "SELECT * FROM tbl_products_a223537 ORDER BY fld_product_num ASC";
         $stmt = $this->db->prepare($sql);
         $stmt->execute();
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -19,7 +19,7 @@ class ProductModel {
 
     // CREATE a new record
     public function create($data) {
-        $sql = "INSERT INTO tbl_products_a123456
+        $sql = "INSERT INTO tbl_products_a223537
                 (fld_product_num, fld_product_name, fld_product_price,
                 fld_product_brand, fld_product_condition, fld_product_year,
                 fld_product_quantity, fld_product_image)
@@ -55,7 +55,7 @@ class ProductModel {
 
     // READ a single record by ID
     public function readById($id) {
-        $sql = "SELECT * FROM tbl_products_a123456 WHERE fld_product_num = :product_num";
+        $sql = "SELECT * FROM tbl_products_a223537 WHERE fld_product_num = :product_num";
         $stmt = $this->db->prepare($sql);
         $stmt->bindValue(':product_num', $id, PDO::PARAM_STR);
         $stmt->execute();
@@ -65,7 +65,7 @@ class ProductModel {
 
     // UPDATE a record
     public function update($data) {
-        $sql = "UPDATE tbl_products_a123456
+        $sql = "UPDATE tbl_products_a223537
         SET fld_product_num = :new_product_num,
             fld_product_name = :product_name,
             fld_product_price = :product_price,
@@ -105,7 +105,7 @@ class ProductModel {
 
     // DELETE a record
     public function delete($id) {
-        $sql = "DELETE FROM tbl_products_a123456 WHERE fld_product_num = :product_num";
+        $sql = "DELETE FROM tbl_products_a223537 WHERE fld_product_num = :product_num";
         $stmt = $this->db->prepare($sql);
         $stmt->bindParam(':product_num', $id, PDO::PARAM_STR);
         $result = $stmt->execute();
