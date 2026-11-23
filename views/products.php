@@ -168,9 +168,9 @@ ob_start();
                                   <a href="<?= BASE_URL ?>productcontroller/edit/<?php echo htmlspecialchars($product['fld_product_num']); ?>" class="btn btn-sm btn-warning">
                                       <i class="bi bi-pencil"></i>
                                   </a>
-                                  <a href="<?= BASE_URL ?>images/<?= htmlspecialchars($product['fld_product_image'] ?? '') ?>" target="_blank" class="btn btn-sm btn-info text-white">
-                                      <i class="bi bi-image"></i>
-                                  </a>
+                                    <a href="<?= BASE_URL ?>images/<?= htmlspecialchars($product['fld_product_image'] ?? '') ?>" target="_blank" class="btn btn-sm btn-info text-white">
+                        <i class="bi bi-image"></i>
+                    </a>
                                   <a href="<?= BASE_URL ?>productcontroller/delete/<?= $product['fld_product_num'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure to delete?');">
                                     <i class="bi bi-trash"></i>
                                 </a>
