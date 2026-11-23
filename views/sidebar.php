@@ -1,6 +1,6 @@
 <div id="mySidebar" class="col-auto bg-dark text-white offcanvas-lg offcanvas-start">
   <div class="p-4">
-    <a href="home.php" class="navbar-brand">
+    <a href="<?= BASE_URL ?>" class="navbar-brand">
       <div class="row">
         <h5 class="">Lumière Soap House</h5>
       </div>
@@ -10,31 +10,31 @@
       
     <ul class="mynav nav nav-pills flex-column">
       <li class="nav-item mb-2">
-        <a href="home.php" class="nav-link text-white">
+        <a href="<?= BASE_URL ?>" class="nav-link text-white">
           <i class="bi bi-house-fill me-2"></i>
           Home
         </a>
       </li>
       <li class="nav-item mb-2">
-        <a href="products.php" class="nav-link text-white">
+        <a href="<?= BASE_URL ?>productcontroller" class="nav-link text-white">
           <i class="bi bi-box-seam me-2"></i>
           Products
         </a>
       </li>
       <li class="nav-item mb-2">
-        <a href="customers.php" class="nav-link text-white">
+        <a href="<?= BASE_URL ?>customercontroller" class="nav-link text-white">
           <i class="bi bi-people-fill me-2"></i>
           Customers
         </a>
       </li>
       <li class="nav-item mb-2">
-        <a href="staffs.php" class="nav-link text-white">
+        <a href="<?= BASE_URL ?>staffcontroller" class="nav-link text-white">
           <i class="bi bi-person-badge-fill me-2"></i>
           Staffs
         </a>
       </li>
       <li class="nav-item mb-2">
-        <a href="orders.php" class="nav-link text-white">
+        <a href="<?= BASE_URL ?>ordercontroller" class="nav-link text-white">
           <i class="bi bi-cart-check-fill me-2"></i>
           Orders
         </a>
